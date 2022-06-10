@@ -1,65 +1,83 @@
 /*<!--Responsive Design-->*/
 @media (max-width: 991px) {
-
     /*custom classes  */ 
     .text-content{
         width:100%;
     }
-
     /* navbar brand */ 
     .navigation-wrap .navbar-brand img{
         height:3.8125rem
     }
     .navigation-wrap{
         text-align: center;
-        background-color: var(--white-color);
+        background-color: #fff;
+    }
+    .navigation-wrap .navbar-collapse{
+        background-color: #00a149;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     .navigation-wrap .nav-link{
         line-height: 1.875rem;
-        color:var(--black-color);
+        color:#fff;
     }
-
+    .navigation-wrap.scroll-on .nav-link{
+        color: #fff;
+    }
     /* Banner Design */ 
     .top-banner{
         padding:9.375rem 0 9.375rem;
     }
-
     /* carousel design */ 
     .testimonial-section .carousel-caption p{
         padding:0;
     }
-
-    /* footer link */ 
+    /* footer link */
     .footer .footer-social a i{
         padding:0 0.75rem;
     }
 }
-
 @media (max-width: 767px) {
-
     /* custom css */
     h1 {
         font-size: 2.8rem;
     }
-
     h2 {
         font-size: 1.3rem;
         line-height: 28px;
     }
-
+    .wrapper {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
     /* top banner */ 
     .top-banner{
         padding:10.375rem 0 9.375rem;
     }
-
-    /* carousel design */ 
+    /* explore-food */
+    .explore-food h2{
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .explore-food .card{
+        min-height: auto;
+    }
+    /* carousel design */
+    .testimonial-section h2{
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 28px;
+        margin-bottom: 20px;
+    } 
     .testimonial-section .carousel-item{
         padding:11rem 3.125rem;
     }
 }
-
 @media (max-width:330px) {
-
     /* carousel design */
     .testimonial-section .carousel-item{
         padding:13rem 3.125rem;

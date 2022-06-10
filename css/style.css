@@ -57,7 +57,6 @@ body {
     Custom Scrollbar
 =========================================
 */
-
 ::-webkit-scrollbar {
   width: 0.625rem;
 }
@@ -69,13 +68,11 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--secondry-color);
 }
-
 /*
 ==========================================
    Custom CSS Design
 ==========================================
 */
-
 h1 {
   font-size: 58px;
   font-weight: 900;
@@ -83,11 +80,9 @@ h1 {
   color: var(--white-color);
   text-shadow: 1px 0 6px #000;
 }
-
 h1 span {
   color: var(--primary-color);
 }
-
 h2 {
   font-weight: 700;
   font-size: 2rem;
@@ -96,7 +91,6 @@ h2 {
   color: var(--secondry-color);
   line-height: 3rem;
 }
-
 h4 {
   color: var(--secondry-color);
   font-family: var(--secondry-font);
@@ -105,7 +99,6 @@ h4 {
   font-weight: 800;
   margin-bottom: 0.5rem;
 }
-
 h5 {
   color: var(--black-color);
   text-transform: capitalize;
@@ -114,7 +107,6 @@ h5 {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-
 p {
   font-size: 1rem;
   color: var(--text-color);
@@ -122,7 +114,6 @@ p {
   line-height: 1.75rem;
   letter-spacing: 1px;
 }
-
 .main-btn {
   display: inline-block;
   padding: 0.625rem 1.875rem;
@@ -140,22 +131,18 @@ p {
   -moz-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
 }
-
 .main-btn:hover {
   background-color: transparent;
   color: var(--primary-color);
 }
-
 .wrapper {
   padding-top: 4.25rem;
   padding-bottom: 4.25rem;
 }
-
 .text-content {
   width: 70%;
   margin: auto;
 }
-
 /*
 ==========================================
    Header Design
@@ -194,8 +181,7 @@ p {
   box-shadow: none;
   margin-left:0.625rem;
 }
-
-/* Change navbar styling on scroll */
+/* Change Navbar Styling on Scroll */
 .navigation-wrap.scroll-on{
   position:fixed;
   background-color:var(--white-color);
@@ -212,7 +198,6 @@ p {
 .navigation-wrap.scroll-on .nav-link.active{
   color:var(--primary-color);
 }
-
 /*
 ==========================================
    top-banner Design
@@ -227,10 +212,9 @@ p {
 .top-banner p{
   color:var(--white-color);
 }
-
 /*
 ==========================================
-  our-menu Design
+  Our-Menu Design
 ==========================================
 */
 .our-menu .card{
@@ -262,7 +246,6 @@ p {
 .card:hover .link_category_product::before{
   transform:translateX(-50%) translateY(-50%) scale(1);
 }
-
 .our-menu .cat-title a{
   text-align: center;
   font-size: 0.8125rem;
@@ -275,7 +258,6 @@ p {
 .card:hover .cat-title a{
   color:var(--primary-color);
 }
-
 /*
 ==========================================
  about section Design
@@ -291,8 +273,6 @@ p {
 .about-section .text-sec{
   padding-left:2rem;
 }
- 
-
 /*
 ==========================================
  food type section Design
@@ -320,20 +300,40 @@ p {
   vertical-align: middle;
   font-weight: 900;
 }
-
 /*
 ==========================================
  explore food section Design
 ==========================================
 */
 .explore-food .card{
-  border:none;
+  border: none !important;
   background-color:transparent;
   border-radius: 0.9375rem;
+  min-height: 500px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  box-shadow: 0 0 3px 0 rgb(0,0,0,0.25);
 }
-.explore-food .card img{
+.explore-food .card:hover{
+  box-shadow: 0 10px 15px 0 rgb(0 0 0 / 15%);
+}
+.explore-food .card a img{
   border-radius: 15px 15px 0 0;
   object-fit: cover;
+}
+.explore-food .card a h5{
+  color: var(--black-color);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.explore-food .card a h5:hover{
+  color: var(--primary-color);
 }
 .explore-food .card span{
   display:block;
@@ -348,7 +348,12 @@ p {
   font-size: 14px;
   line-height: 22px;
 }
-
+.explore-food .card .main-btn{
+  cursor: pointer;
+}
+.explore-food .card .main-btn:hover{
+  box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 15%);
+}
 /*
 ==========================================
  testimonial section Design
@@ -361,17 +366,16 @@ p {
   color:var(--white-color);
 }
 .testimonial-section .carousel-item{
-  margin-top:3rem;
-  padding:10rem 3.125rem;
-  background-color:var(--black-color);
+  margin-top: 3rem;
+  padding: 10rem 3.125rem;
+  background-color: #5c3cff;
   border-radius: 0.9375rem;
   text-align: center;
 }
-
 .testimonial-section .carousel-caption img{
   max-width: 5rem;
   border-radius: 50%;
-  padding:0.3125rem;
+  padding: 0.3125rem;
 }
 .testimonial-section .carousel-caption p{
   font-size: 1.125rem;
@@ -380,13 +384,16 @@ p {
   color:var(--white-color);
   padding:0 11% 0.625rem;
 }
+.testimonial-section .carousel-caption h5{
+  color: var(--white-color);
+}
 .testimonial-section .carousel-indicators{
-  bottom:-2.8125rem;
+  bottom: -2.8125rem;
 }
 .testimonial-section .carousel-indicators button{
-  width:15px;
-  height:15px;
-  outline:none;
+  width: 15px;
+  height: 15px;
+  outline: none;
   border-radius: 50%;
   border: none;
   margin-right:1rem;
@@ -395,7 +402,6 @@ p {
 .testimonial-section .carousel-indicators button.active{
   opacity:1;
 }
-
 /*
 ==========================================
 footer section Design
@@ -403,18 +409,37 @@ footer section Design
 */
 .footer{
   background: var(--black-color);
-} 
+  padding: 3rem 0;
+}
+.footer .footer-social a{
+  background: var(--primary-color);
+  box-shadow: 0 3px 5px 0 rgb(0 0 0 / 25%);
+  width: 50px;
+  height: 50px;
+  padding: 0 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer .footer-social a i{
   font-size: 1.5rem;
   color:var(--white-color);
-  padding:0 1rem;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
 .footer .footer-social a:hover i{
-  color:var(--primary-color);
+  color: var(--black-color);
+  transform: rotate(360deg);
 }
- 
-
 /* Form Control */
+.newsletter form{
+  width: 800px;
+  max-width: 100%;
+}
 .newsletter .form-control{
   height:3.225rem;
   padding:0 1.25rem;
@@ -438,7 +463,7 @@ footer section Design
 }
 .newsletter:hover .form-control{
   border:0.1875rem solid var(--primary-color);
-  color:var(--black-color);
+  color:var(--white-color)
 }
 .newsletter:hover .main-btn{
  background:var(--primary-color); 
@@ -449,4 +474,51 @@ footer section Design
   outline:none;
   box-shadow: none;
   border-color:var(--primary-color);
+}
+.footer .footer-copy .copyright p a{
+  color: var(--primary-color);
+}
+/* Back to Top Button */
+#btnUp {
+  display: inline-block;
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  -moz-transition: background-color .3s, opacity .5s, visibility .5s;
+  -ms-transition: background-color .3s, opacity .5s, visibility .5s;
+  -o-transition: background-color .3s, opacity .5s, visibility .5s;
+}
+#btnUp::after {
+  content: "\f077";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: var(--white-color);
+}
+#btnUp:hover {
+  cursor: pointer;
+  background-color: var(--secondry-color);
+}
+#btnUp:active {
+  background-color: var(--secondry-color);
+}
+#btnUp.show {
+  opacity: 1;
+  visibility: visible;
 }

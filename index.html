@@ -1,36 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Description" content="Enter your description here" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="https://tofiquekhan688.blogspot.com">
   <title>Pizza - Resto Website Design by Tofique Khan</title>
 
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="images/logo.png">
-
   <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
   <!-- OWN CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive-style.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
   <!-- header design -->
   <header>
     <nav class="navbar navbar-expand-lg navigation-wrap">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logo.png" class="img-fluid">
+          <img src="images/logo.png" class="img-fluid" alt="header top logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
-          <i class="fas fa-stream navbar-toggler-icon"></i>
+          <i class="fas fa-stream navbar-toggler-icon" onclick="changeIcon(this)"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -46,7 +46,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#testimonial">Reviews</a>
             </li> 
-            <li><button class="main-btn">1200 345 123</button></li>
+            <li>
+              <a class="main-btn" href="tel:1200345123">1200 345 123</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -82,7 +84,7 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="./images/img/category1.png" class="img-fluid">
+                <img src="images/img/category1.png" class="img-fluid" alt="category image 1">
               </a>
             </div>
             <div class="cat-title">
@@ -95,7 +97,7 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="./images/img/category2.png" class="img-fluid">
+                <img src="images/img/category2.png" class="img-fluid" alt="category image 2">
               </a>
             </div>
             <div class="cat-title">
@@ -108,7 +110,7 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="./images/img/category3.png" class="img-fluid">
+                <img src="./images/img/category3.png" class="img-fluid" alt="category image 3">
               </a>
             </div>
             <div class="cat-title">
@@ -121,7 +123,7 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="./images/img/category4.png" class="img-fluid">
+                <img src="./images/img/category4.png" class="img-fluid" alt="category image 4">
               </a>
             </div>
             <div class="cat-title">
@@ -134,7 +136,7 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="./images/img/category5.png" class="img-fluid">
+                <img src="./images/img/category5.png" class="img-fluid" alt="category image 5">
               </a>
             </div>
             <div class="cat-title">
@@ -147,7 +149,7 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="./images/img/category6.png" class="img-fluid">
+                <img src="./images/img/category6.png" class="img-fluid" alt="category image 6">
               </a>
             </div>
             <div class="cat-title">
@@ -167,7 +169,7 @@
         <div class="row align-items-center">
           <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
             <div class="card border-0">
-              <img src="images/img/img-1.png" class="img-fluid">
+              <img src="images/img/img-1.png" class="img-fluid" alt="about image 1">
             </div>
           </div>
           <div class="col-lg-5 col-md-12 text-sec">
@@ -194,7 +196,7 @@
           </div>
           <div class="col-lg-7 col-md-12">
             <div class="card border-0">
-              <img src="images/img/img-2.png" class="img-fluid">
+              <img src="images/img/img-2.png" class="img-fluid" alt="about image 2">
             </div>
           </div>
         </div>
@@ -219,35 +221,47 @@
         </div>
         <div class="row pt-5">
           <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
-            <div class="card border">
-              <img src="images/img/img-3.jpg" class="img-fluid">
+            <div class="card">
+              <a href="#">
+                <img src="images/img/img-3.jpg" class="img-fluid" alt="explore food image 1">
+              </a>
               <div class="p-3">
-                <h5>10 Reasons To Do A Digital Detox Challenge</h5>
+                <a href="#">
+                  <h5>10 Reasons To Do A Digital Detox Challenge</h5>
+                </a>
                 <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
                   hac…</p>
-                <button class="mt-2 main-btn">Read More</button>
+                <a class="mt-2 main-btn">Read More</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
-            <div class="card border">
-              <img src="images/img/img-4.jpg" class="img-fluid">
+            <div class="card">
+              <a href="#">
+                <img src="images/img/img-4.jpg" class="img-fluid" alt="explore food image 2">
+              </a>
               <div class="p-3">
-                <h5>The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese</h5>
+                <a href="#">
+                  <h5>The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese</h5>
+                </a>
                 <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
                   hac…</p>
-                <button class="mt-2 main-btn">Read More</button>
+                <a class="mt-2 main-btn">Read More</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
-            <div class="card border">
-              <img src="images/img/img-5.jpg" class="img-fluid">
+            <div class="card">
+              <a href="#">
+                <img src="images/img/img-5.jpg" class="img-fluid" alt="explore food image 3">
+              </a>
               <div class="p-3">
-                <h5>Traditional Soft Pretzels with Sweet Beer Cheese</h5>
+                <a href="#">
+                  <h5>Traditional Soft Pretzels with Sweet Beer Cheese</h5>
+                </a>
                 <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
                   hac…</p>
-                <button class="mt-2 main-btn">Read More</button>
+                <a class="mt-2 main-btn">Read More</a>
               </div>
             </div>
           </div>
@@ -261,7 +275,7 @@
   <section id="testimonial">
     <div class="wrapper testimonial-section">
       <div class="container text-center">
-        <div class="text-center pb-4">
+        <div class="text-center">
           <h2>Testimonial</h2>
         </div>
         <div class="row">
@@ -278,25 +292,25 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="carousel-caption">
-                    <img src="images/review/review-1.jpg">
+                    <img src="images/review/review-1.jpg" alt="testimonial review image 1">
                     <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                      live the blind texts. "</p>
+                      live the blind texts."</p>
                     <h5>Johnthan Doe - UX Designer</h5>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="carousel-caption">
-                    <img src="images/review/review-2.jpg">
+                    <img src="images/review/review-2.jpg" alt="testimonial review image 2">
                     <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                      live the blind texts. "</p>
+                      live the blind texts."</p>
                     <h5>Maccy Doe - Front End</h5>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="carousel-caption">
-                    <img src="images/review/review-1.jpg">
+                    <img src="images/review/review-1.jpg" alt="testimonial review image 3">
                     <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                      live the blind texts. "</p>
+                      live the blind texts."</p>
                     <h5>Johnthan Doe - UX Designer</h5>
                   </div>
                 </div>
@@ -311,31 +325,35 @@
 
   <!-- section-6 footer--> 
   <footer id="footer">
-    <div class="footer pt-5">
+    <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 text-center">
-            <div class="footer-social pb-4 text-center">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-dribbble"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="col-md-12">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="footer-social">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-dribbble"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="newsletter">
+                  <form>
+                    <div class="d-flex">
+                      <input class="form-control" placeholder="Email Address Here" type="email">
+                      <button class="main-btn" type="submit">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <form class="newsletter">
-              <div class="d-flex">
-                <input class="form-control" placeholder="Email Address Here" type="email">
-                <button class="main-btn" type="submit">Subscribe</button>
-              </div>
-            </form>
-          </div>
+        </div>
+        <div class="row">
           <div class="col-sm-12">
             <div class="footer-copy">
-              <div class="copy-right text-center pt-5">
-                <p class="text-light">© 2022. PIZZA. All rights reserved.</p>
+              <div class="copyright text-center pt-5">
+                <p class="text-light">© 2022 PIZZA | All rights reserved by <a href="https://tofiquekhan688.blogspot.com">Tofique Khan</a></p>
               </div>
             </div>
           </div>
@@ -343,13 +361,17 @@
       </div>
     </div>
   </footer>
-
-
-  <!-- JS Libraries -->
+  <!-- Back to Top -->
+  <div>
+    <a href="#backtoTop" class="shadow" id="btnUp"></a>
+  </div>
+  <!-- Jquery JS CDN Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- JS Bootstrap Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-  <!-- own js -->
+  <!-- Custom JS File Link -->
   <script src="js/main.js"></script>
-</body>
 
+</body>
 </html>

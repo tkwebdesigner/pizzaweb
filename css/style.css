@@ -368,7 +368,7 @@ p {
 .testimonial-section .carousel-item{
   margin-top: 3rem;
   padding: 10rem 3.125rem;
-  background-color: #5c3cff;
+  background-color: hsl(146deg 100% 9%);
   border-radius: 0.9375rem;
   text-align: center;
 }
@@ -416,7 +416,7 @@ footer section Design
   box-shadow: 0 3px 5px 0 rgb(0 0 0 / 25%);
   width: 50px;
   height: 50px;
-  padding: 0 10px;
+  padding: 0 15px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -431,8 +431,11 @@ footer section Design
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
 }
+.footer .footer-social a:hover{
+  background-color: #00a149;
+}
 .footer .footer-social a:hover i{
-  color: var(--black-color);
+  color: var(--white-color);
   transform: rotate(360deg);
 }
 /* Form Control */
@@ -448,7 +451,7 @@ footer section Design
   border-radius: 0;
   background:transparent;
   border:0.1875rem solid var(--white-color);
-  color:var(--black-color);
+  color: var(--black-color);
   font-weight: 700;
 }
 .newsletter .main-btn{

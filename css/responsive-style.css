@@ -37,6 +37,18 @@
         padding:0 0.75rem;
     }
 }
+@media (max-width:768px) {
+    #btnUp {
+        width: 36px;
+        height: 36px;
+        bottom: 15px;
+        right: 15px;
+    }
+    #btnUp::after {
+        font-size: 16px;
+        line-height: 36px;
+    }
+}
 @media (max-width: 767px) {
     /* custom css */
     h1 {
@@ -65,6 +77,9 @@
     .explore-food .card{
         min-height: auto;
     }
+    .explore-food .card a img {
+        width: 100%;
+    }
     /* carousel design */
     .testimonial-section h2{
         font-size: 2.3rem;
@@ -76,10 +91,18 @@
     .testimonial-section .carousel-item{
         padding:11rem 3.125rem;
     }
+    .footer {
+        padding: 20px 0;
+    }
+    .footer .footer-social{
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    
 }
 @media (max-width:330px) {
     /* carousel design */
     .testimonial-section .carousel-item{
         padding:13rem 3.125rem;
-    } 
+    }
 }

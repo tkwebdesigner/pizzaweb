@@ -143,6 +143,15 @@ p {
   width: 70%;
   margin: auto;
 }
+.fs-32{
+  font-size: 32px;
+}
+.fs-28{
+  font-size: 28px;
+}
+.fs-24{
+  font-size: 24px;
+}
 /*
 ==========================================
    Header Design
@@ -153,8 +162,11 @@ p {
   width:100%;
   left:0;
   z-index:1000;
-  -webkit-transition:all 0.3s ease-out;
   transition:all 0.3s ease-out;
+  -webkit-transition:all 0.3s ease-out;
+  -moz-transition:all 0.3s ease-out;
+  -ms-transition:all 0.3s ease-out;
+  -o-transition:all 0.3s ease-out;
 }
 .navigation-wrap .nav-item{
   padding:0 0.625rem;
@@ -273,6 +285,9 @@ p {
 .about-section .text-sec{
   padding-left:2rem;
 }
+.about-section h3{
+  color: var(--white-color);
+}
 /*
 ==========================================
  food type section Design
@@ -362,7 +377,7 @@ p {
 .testimonial-section{
   background: var(--secondry-color);
 }
-.testimonial-section h2{
+.testimonial-section h4{
   color:var(--white-color);
 }
 .testimonial-section .carousel-item{
@@ -438,6 +453,7 @@ footer section Design
   color: var(--white-color);
   transform: rotate(360deg);
 }
+
 /* Form Control */
 .newsletter form{
   width: 800px;
@@ -453,6 +469,9 @@ footer section Design
   border:0.1875rem solid var(--white-color);
   color: var(--black-color);
   font-weight: 700;
+}
+.newsletter .form-control::placeholder{
+  color: var(--white-color);
 }
 .newsletter .main-btn{
   height:3.225rem;
@@ -481,6 +500,7 @@ footer section Design
 .footer .footer-copy .copyright p a{
   color: var(--primary-color);
 }
+
 /* Back to Top Button */
 #btnUp {
   display: inline-block;

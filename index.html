@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>PizzaWeb - Resto Website Design by Tofique Khan</title>
-  <meta name="description" content="PizzaWeb Website is Designed by Tofique Khan">
+  <meta name="description" content="Welcome to our food website, where we bring you the best recipes, cooking techniques, and culinary inspiration from around the world. From quick and easy meals to gourmet delights, we've got you covered.">
   <meta name="keywords" content="PizzaWeb Website, food website design, restorent website, tofique kahn web designer">
 
   <!-- OG Tags -->
@@ -16,16 +16,27 @@
   <meta property="og:description" content="PizzaWeb Website is Designed by Tofique Khan">
   <meta property="og:url" content="https://tkwebdesigner.github.io/pizzaweb/">
 
-  <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="images/logo.webp">
-  <!-- bootstrap CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!-- OWN CSS -->
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsive-style.css">
-</head>
+  <!-- Twitter Card -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="PizzaWeb">
+  <meta property="og:title" content="PizzaWeb - Resto Website Design by Tofique Khan">
+  <meta property="og:description" content="PizzaWeb Website is Designed by Tofique Khan">
+  <meta property="og:url" content="https://tkwebdesigner.github.io/pizzaweb/">
 
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="assets/images/logo.webp">
+
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+  <!-- Font Awesome CSS File -->
+  <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive-style.css">
+</head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
 
   <!-- header design -->
@@ -33,7 +44,7 @@
     <nav class="navbar navbar-expand-lg navigation-wrap">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logo.webp" class="img-fluid" alt="header top logo">
+          <img src="assets/images/logo.webp" class="img-fluid" alt="header top logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
@@ -73,7 +84,7 @@
             <h2 class="fs-32">Medium 2-topping* pizza</h2>
             <p>*Additional charge for premium toppings. Minimum of 2 required.</p>
             <div class="mt-4">
-              <button class="main-btn">Order now <i class="fas fa-shopping-basket ps-3"></i></button>
+              <button type="button" class="main-btn">Order now <i class="fa-solid fa-shopping-basket ps-3"></i></button>
             </div>
           </div>
         </div>
@@ -86,12 +97,12 @@
   <section class="our-menu p-4">
     <div class="container text-center">
       <h2 class="pb-4 fs-32">Our Menu</h2>
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-6 col-sm-2 mb-4 mb-lg-0">
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="images/img/category1.webp" class="img-fluid" alt="category image 1">
+                <img src="assets/images/img/category1.webp" class="img-fluid" alt="Pizza" title="Pizza" width="115" height="85">
               </a>
             </div>
             <div class="cat-title">
@@ -104,7 +115,7 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="images/img/category2.webp" class="img-fluid" alt="category image 2">
+                <img src="assets/images/img/category2.webp" class="img-fluid" alt="Sauces" title="Sauces" width="115" height="85">
               </a>
             </div>
             <div class="cat-title">
@@ -117,7 +128,7 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="./images/img/category3.webp" class="img-fluid" alt="category image 3">
+                <img src="assets/images/img/category3.webp" class="img-fluid" alt="Combo" title="Combo" width="108" height="85">
               </a>
             </div>
             <div class="cat-title">
@@ -130,11 +141,11 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="./images/img/category4.webp" class="img-fluid" alt="category image 4">
+                <img src="assets/images/img/category4.webp" class="img-fluid" alt="Kids Menu" title="Kids Menu" width="121" height="81">
               </a>
             </div>
             <div class="cat-title">
-              <a href="#">Kids menus</a>
+              <a href="#">Kids Menus</a>
             </div>
           </div>
         </div>
@@ -143,7 +154,7 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="./images/img/category5.webp" class="img-fluid" alt="category image 5">
+                <img src="assets/images/img/category5.webp" class="img-fluid" alt="Chicken" title="Chicken" width="106" height="71">
               </a>
             </div>
             <div class="cat-title">
@@ -156,11 +167,11 @@
           <div class="card">
             <div class="cat-image">
               <a class="link_category_product" href="#">
-                <img src="./images/img/category6.webp" class="img-fluid" alt="category image 6">
+                <img src="assets/images/img/category6.webp" class="img-fluid" alt="Box Meals" title="Box Meals" width="100" height="71">
               </a>
             </div>
             <div class="cat-title">
-              <a href="#">Box meals</a>
+              <a href="#">Box Meals</a>
             </div>
           </div>
         </div>
@@ -176,13 +187,15 @@
         <div class="row align-items-center">
           <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
             <div class="card border-0">
-              <img src="images/img/img-1.webp" class="img-fluid" alt="about image 1">
+              <img src="assets/images/img/img-1.webp" class="img-fluid" alt="We pride ourselves on making real food from the best ingredients." title="We pride ourselves on making real food from the best ingredients." width="2121" height="1414">
             </div>
           </div>
           <div class="col-lg-5 col-md-12 text-sec">
             <h3>We pride ourselves on making real food from the best ingredients.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit
-              amet leo. Mauris feugiat erat tellus.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit
+              amet leo. Mauris feugiat erat tellus.
+            </p>
             <button class="main-btn mt-4">Learn More</button>
           </div>
         </div>
@@ -191,9 +204,11 @@
         <div class="row align-items-center">
           <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
             <h3>We make everything by hand with the best possible ingredients.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit
               amet leo. Mauris feugiat erat tellus.Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.</p>
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
             <ul class="list-unstyled py-3">
               <li>Etiam sed dolor ac diam volutpat.</li>
               <li>Erat volutpat aliquet imperdiet.</li>
@@ -203,7 +218,7 @@
           </div>
           <div class="col-lg-7 col-md-12">
             <div class="card border-0">
-              <img src="images/img/img-2.webp" class="img-fluid" alt="about image 2">
+              <img src="assets/images/img/img-2.webp" class="img-fluid" alt="We make everything by hand with the best possible ingredients." title="We make everything by hand with the best possible ingredients." width="800" height="800">
             </div>
           </div>
         </div>
@@ -229,46 +244,76 @@
         <div class="row pt-5">
           <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
             <div class="card">
-              <a href="#">
-                <img src="images/img/img-3.webp" class="img-fluid" alt="explore food image 1">
-              </a>
-              <div class="p-3">
+              <div class="card_image">
                 <a href="#">
-                  <h4>10 Reasons To Do A Digital Detox Challenge</h4>
+                  <img src="assets/images/img/img-3.webp" class="card-img-top img-fluid" alt="explore food image 1">
                 </a>
-                <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
-                  hac…</p>
-                <a class="mt-2 main-btn">Read More</a>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <a href="#">
+                    <h4>10 Reasons To Do A Digital Detox Challenge</h4>
+                  </a>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
+                    hac…
+                  </p>
+                </div>
+                <div class="card_bottom">
+                  <a class="main-btn" href="#">Read Now</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
             <div class="card">
-              <a href="#">
-                <img src="images/img/img-4.webp" class="img-fluid" alt="explore food image 2">
-              </a>
-              <div class="p-3">
+              <div class="card_image">
                 <a href="#">
-                  <h4>The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese</h4>
+                  <img src="assets/images/img/img-4.webp" class="card-img-top img-fluid" alt="explore food image 2">
                 </a>
-                <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
-                  hac…</p>
-                <a class="mt-2 main-btn">Read More</a>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <a href="#">
+                    <h4>The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese</h4>
+                  </a>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
+                    hac…
+                  </p>
+                </div>
+                <div class="card_bottom">
+                  <a class="main-btn" href="#">Read Now</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
             <div class="card">
-              <a href="#">
-                <img src="images/img/img-5.webp" class="img-fluid" alt="explore food image 3">
-              </a>
-              <div class="p-3">
+              <div class="card_image">
                 <a href="#">
-                  <h4>Traditional Soft Pretzels with Sweet Beer Cheese</h4>
+                  <img src="assets/images/img/img-5.webp" class="card-img-top img-fluid" alt="explore food image 3">
                 </a>
-                <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
-                  hac…</p>
-                <a class="mt-2 main-btn">Read More</a>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <a href="#">
+                    <h4>Traditional Soft Pretzels with Sweet Beer Cheese</h4>
+                  </a>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
+                    hac…
+                  </p>
+                </div>
+                <div class="card_bottom">
+                  <a class="main-btn" href="#">Read Now</a>
+                </div>
               </div>
             </div>
           </div>
@@ -299,7 +344,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="carousel-caption">
-                    <img src="images/review/review-1.webp" alt="testimonial review image 1" title="Testimonial Review 1">
+                    <img src="assets/images/review/review-1.webp" alt="testimonial review image 1" title="Testimonial Review 1">
                     <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                       live the blind texts."</p>
                     <h5>Johnthan Doe - UX Designer</h5>
@@ -307,7 +352,7 @@
                 </div>
                 <div class="carousel-item">
                   <div class="carousel-caption">
-                    <img src="images/review/review-2.webp" alt="testimonial review image 2" title="Testimonial Review 2">
+                    <img src="assets/images/review/review-2.webp" alt="testimonial review image 2" title="Testimonial Review 2">
                     <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                       live the blind texts."</p>
                     <h5>Maccy Doe - Front End</h5>
@@ -315,7 +360,7 @@
                 </div>
                 <div class="carousel-item">
                   <div class="carousel-caption">
-                    <img src="images/review/review-1.webp" alt="testimonial review image 3" title="Testimonial Review 3">
+                    <img src="assets/images/review/review-1.webp" alt="testimonial review image 3" title="Testimonial Review 3">
                     <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                       live the blind texts."</p>
                     <h5>Johnthan Doe - UX Designer</h5>
@@ -337,12 +382,12 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="footer-social">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                  <a href="#"><i class="fab fa-dribbble"></i></a>
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
+                  <a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                  <a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>  
             <div class="col-md-6">
@@ -360,7 +405,7 @@
           <div class="col-sm-12">
             <div class="footer-copy">
               <div class="copyright text-center pt-5">
-                <p class="text-light">© 2022 PIZZA | All Rights Reserved by <a href="https://tofiquekhan688.blogspot.com">Tofique Khan</a></p>
+                <p class="text-light">© 2023 PIZZA | All Rights Reserved by <a href="https://tofiquekhan688.blogspot.com" title="Tofique Khan">Tofique Khan</a></p>
               </div>
             </div>
           </div>
@@ -371,15 +416,14 @@
 
   <!-- Back to Top -->
   <div>
-    <a href="#backtoTop" class="shadow" id="btnUp"></a>
+    <a title="Back to Top" href="#backtoTop" class="shadow" id="btnUp"></a>
   </div>
-  <!-- Jquery JS CDN Link -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <!-- JS Bootstrap Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS File Link -->
-  <script src="./js/main.js"></script>
 
+  <!-- Jquery JS CDN Link -->
+  <script src="assets/plugins/jquery/js/jquery.min.js"></script>
+  <!-- JS Bootstrap Libraries -->
+  <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS File Link -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

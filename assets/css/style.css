@@ -416,18 +416,16 @@ p {
   overflow: hidden;
 }
 .explore-food .card .card_image{
-  width: 100%;
-  display: block;
+  position: relative;
   overflow: hidden;
-  transition: .3s;
 }
-.explore-food .card .card_image:hover img{
-  transform: scale(1.15);
-  transition: .3s;
-}
-
 .explore-food .card a img{
   border-radius: 15px 15px 0 0;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.explore-food .card .card_image:hover img{
+  transform: scale(1.1);
 }
 .explore-food .card .card-body{
   height: 200px;

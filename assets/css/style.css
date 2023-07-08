@@ -258,6 +258,7 @@ p {
   padding:0 0.625rem;
   transition:all 0.3s linear;
 } 
+.navbar-toggler{border: none}
 .navbar-toggler:focus{
   outline:unset;
   border:unset;

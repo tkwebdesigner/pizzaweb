@@ -22,7 +22,8 @@
     }
     /* navbar brand */ 
     .navigation-wrap .navbar-brand img{
-        height:3.8125rem
+       width: 75px;
+       aspect-ratio: 1/1;
     }
     .navigation-wrap{
         text-align: center;

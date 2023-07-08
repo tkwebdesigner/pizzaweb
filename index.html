@@ -28,13 +28,17 @@
   <link rel="icon" type="image/png" href="assets/images/logo.webp">
 
   <!-- Bootstrap CSS File -->
+  <link rel="preload" as="style" href="assets/plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 
   <!-- Font Awesome CSS File -->
+  <link rel="preload" as="style" href="assets/plugins/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
 
   <!-- Custom CSS Files -->
+  <link rel="preload" as="style" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preload" as="style" href="assets/css/responsive-style.css">
   <link rel="stylesheet" href="assets/css/responsive-style.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
@@ -422,10 +426,10 @@
   <!-- Jquery JS Link -->
   <script src="assets/plugins/jquery/js/jquery.min.js"></script>
   <!-- JS Bootstrap Libraries -->
-  <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- Jquery Lazyload  -->
-  <script src="assets/plugins/jquery-lazyload/js/jquery.lazyload.min.js"></script>
+  <script defer src="assets/plugins/jquery-lazyload/js/jquery.lazyload.min.js"></script>
   <!-- Custom JS File Link -->
-  <script src="assets/js/main.js"></script>
+  <script defer src="assets/js/main.js"></script>
 </body>
 </html>
